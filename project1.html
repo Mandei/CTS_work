@@ -4,8 +4,9 @@
         <title>Login Page</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
@@ -15,11 +16,12 @@
 
     <body>
 
-    <div style="padding: 8% 22%; border-radius:4px; border: dimgray">
-        <ul >
-            <img style="float: left; margin:10px 5px; " src="user.jpg" width=50px height=50px>
-            <h3>Customer Management</h3>
-            <div style="float:right; padding:10px; font-family: Comic Sans MS, cursive, sans-serif">
+    <div class="container" >
+    <div class="border rounded border border-info" >
+        <ul class="ul_main_header">
+            <img class="main_image" src="images/user.jpg" >
+            <h3 class="h3_enhc">Customer Management</h3>
+            <div style="float:right; padding:10px 10px 0; font-family: Comic Sans MS, cursive, sans-serif">
                 <li ><a href="#home">Customer</a></li>
                 <li ><a href="#news">Orders</a></li>
                 <li ><a href="#about">About</a></li>
@@ -27,28 +29,24 @@
             </div>
         </ul>
        
-      
         
-            <div class="border rounded border border-info" >
                 
                     <p class="fa fa-briefcase" style="font-size:50px; padding: 20px 20px" >  Login</p>
             
-                     
-                            
-                                <div class="row " style="padding: 4px 0;" >    
+                            <div class="row row_padding"  >    
                                 <div class="col-md-3">
-                                    <label style="padding: 8px 15px;" for="email">Email:</label>
+                                    <label class="label_padding" for="email">Email:</label>
                                 </div>
                                 <div class="col-md-3 " >
-                                    <input class="glossyBtn" type="email"  style="border-radius: 4px; border-left: 5px solid red; border: 1px solid #ccc; padding: 10px 5px 3px 5px; " id="email" placeholder="Username/email" name="email" size="50px">
+                                    <input class="inpt_pos" style="border-left: 5px solid red; " type="email" id="email" placeholder="Username/email" name="email" size="50px">
                                 </div>
                             </div>
-                            <div class="row " style="padding: 4px 0;">
+                            <div class="row row_padding">
                                 <div class="col-md-3">
-                                     <label style="padding: 8px 15px;" for="pwd">Password:</label>
+                                     <label class="label_padding" for="pwd">Password:</label>
                                  </div>
                                 <div class="col-md-3">
-                                    <input type="password" style="border-radius: 4px; border-left: 5px solid red; border: 1px solid #ccc; padding: 10px 5px 3px 5px;"  id="pwd" placeholder="Password" name="pswd" size="50px">
+                                    <input class="inpt_pos" style="border-left: 5px solid red; "  type="password" id="pwd" placeholder="Password" name="pswd" size="50px">
                                 </div>
                              </div>
                      

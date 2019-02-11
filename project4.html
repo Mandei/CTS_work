@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>
+    Edit Customer Profile
+    
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    </head> 
+
+<style>
+    input[type=text],input[type=number]
+    {
+        border-left:4px solid green;
+        padding:10px;
+       
+    }
+</style>
+
+<body>
+        <div class="container" >
+            <div class="border border-info ">
+                <ul class="ul_main_header">
+                    <img class="main_image" src="images/user.jpg" >
+                    <h3 class="h3_enhc">Customer Management</h3>
+                    <div style="float:right; padding:10px 10px 0; font-family: Comic Sans MS, cursive, sans-serif">
+                        <li ><a href="#home">Customer</a></li>
+                        <li ><a href="#news">Orders</a></li>
+                        <li ><a href="#about">About</a></li>
+                        <button class="login">Login</button>
+                    </div>
+                </ul>
+               
+    <div class="container">
+        <p class="fa fa-edit" style="font-size:30px; padding: 20px 8px 5px" >  Edit Customer</p><br>
+      
+        <label  style="margin:10px 0px"><b>Ward Bell </b>(<label style="color: rgb(59, 59, 255)">View Orders</label>)</label>
+      
+    </div>
+    <div class="container">
+            <div class="row" style="margin:10px 0px" >    
+                    <div class="col-md-3">
+                        <label  for="name">First Name:</label>
+                    </div>
+                    <div class="col-md-5 "  >
+                        <input class="form-control bdr_lft "  type="text"  value="Ward" >
+                    </div>
+                </div>
+                <div class="row " style="margin:10px 0px">
+                    <div class="col-md-3">
+                         <label >Last Name:</label>
+                     </div>
+                    <div class="col-md-5">
+                        <input class="form-control bdr_lft " type="text"  value="Bell"  >
+                    </div>
+                 </div>
+                 <div class="row " style="margin:10px 0px" >    
+                        <div class="col-md-3">
+                            <label >Gender:</label>
+                        </div>
+                        <div class="col-md-5" style="margin:5px 15px">
+                            <div class="row"><label ><input type="radio" name="gender" value="Male" style="margin-right:25px " checked> Male</label></div>
+                            <div class="row"><label ><input type="radio" name="gender" value="Female" style="margin-right:30px ">Female</label></div>
+                        </div>
+                    </div>
+                 <div class="row " style="margin:10px 0px" >    
+                        <div class="col-md-3">
+                            <label for="email">Email:</label>
+                        </div>
+                        <div class="col-md-5" >
+                            <input class="form-control bdr_lft"  type="text"  value="Ward.Bell@gmail.com" >
+                        </div>
+                    </div>
+                    <div class="row " style="margin:10px 0px">
+                        <div class="col-md-3">
+                             <label  >Address</label>
+                         </div>
+                        <div class="col-md-5">
+                            <input class="form-control  " type="text" id="pwd" value="12 Ocean View st.">
+                        </div>
+                     </div>
+                 <div class="row " style="margin:10px 0px" >    
+                        <div class="col-md-3">
+                            <label  >City:</label>
+                        </div>
+                        <div class="col-md-5 " >
+                            <input class="form-control "  type="text"  value="Dallas"  >
+                        </div>
+                    </div>
+                    <div class="row " style="margin:10px 0px">
+                        <div class="col-md-3">
+                             <label  >State:</label>
+                         </div>
+                        <div class="col-md-5">
+                                <select class="form-control" id="sel1" style="border-left:4px solid green;">
+                                        <option>Texas</option>
+                                        <option>New york</option>
+                                        <option>New jersey</option>
+                                        <option>Paris</option>
+                                </select>
+                        </div>
+                        
+      
+                     </div>
+                     <div class="row " style="margin:10px 0px ">
+                            <div class="col-md-3">
+                                 <label  >Zip:</label>
+                             </div>
+                            <div class="col-md-5">
+                                <input class="form-control" type="number"  value="85233" name="pswd" >
+                            </div>
+                         </div>
+
+
+                         <button type="submit" class="btn btn-info" >Update</button>
+                         <button type="submit" class="btn btn-danger" style="margin:25px 20px;">Delete</button>
+
+    </div>
+    </div>
+    </div>
+   
+
+</body>
+</html>
